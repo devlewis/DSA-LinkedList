@@ -21,7 +21,7 @@ class LinkedList {
       let previousNode = this.head;
       let currNode = this.head;
       let counter = 1;
-      while (counter !== pos) {
+      while (counter < pos) {
         if (currNode.next === null) {
           return null;
         } else {
@@ -135,7 +135,7 @@ function main() {
   SLL.remove("Husker");
   SLL.insertBefore("Boomer", "Athena");
   SLL.insertAfter("Helo", "Hotdog");
-  SLL.insertAt("Kat", 3);
+  SLL.insertAt("Kat");
   SLL.remove("Tauhida");
 
   return SLL;
